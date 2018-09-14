@@ -301,7 +301,7 @@ def ExtractSaccades(name,file,exp,participant_group,delimiter,target_onset_msg,t
             trackerdEye=str(Eye[1])
     elif (re) & (not le):
         trackerdEye=str(Eye[0])
-    elif (lr) & (not re):
+    elif (le) & (not re):
         trackerdEye=str(Eye[1])
             
 
