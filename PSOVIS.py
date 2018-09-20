@@ -216,7 +216,7 @@ for idx, participant in enumerate(participants):
     Gaze_y= np.array(Gaze_y).astype(float)
 
     TIMESTAMP=participant_data['TIMESTAMP']
-    timestamp_interval=TIMESTAMP[2]-TIMESTAMP[1]
+    timestamp_interval=TIMESTAMP.iloc[2]-TIMESTAMP.iloc[1]
     include_right=int(include_right//timestamp_interval) # conver to frames
     offset_right=int(offset_right//timestamp_interval)
     fixation_window=int(fixation_window//timestamp_interval)
